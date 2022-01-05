@@ -1,0 +1,38 @@
+<!--PRÁCTICA DE REALIDAD AUMENTADA-->
+
+<!--LARISSA LÓPEZ BASURTO-->
+<!--INTERFACES Y MULTIMEDIA - QUINTO B-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica de Realidad Aumentada</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+</head>
+<body>
+    <a-scene arjs>
+        <a-marker preset="hiro">
+            <a-entity position="0 0 0" scale="0.1 0.1 0.1">
+            <!--ESFERA-->
+              <a-sphere position="-3 0.5 5" radius=".75" width="16" color="rgb(253, 150, 227)"></a-sphere>
+            <!--ESFERA-->
+              <a-box position="3 1.5 5" rotation="0 45 0" color="#5560ff" width="4" height="4"></a-box>
+            <!--CILINDRO-->
+              <a-cylinder position="-2 0.75 -3" radius="0.5" width="7" height="5" color="rgb(159, 228, 255)"></a-cylinder> 
+            <!--CONO-->
+              <a-cone position="3 1.5 -5" rotation="-90 0 0" width="7" height="5" color="#7BC8A4"></a-cone> 
+            <!--TRIANGULO-->
+              <a-triangle position="-1 -1.5 -5" rotation="-90 45 0" color=" rgb(221, 36, 36)"></a-triangle> 
+            <!--PLANO-->
+              <a-plane position="-1 -9 -1" rotation="-40 0 0" width="4" height="4" color="rgb(255, 236, 60)"></a-plane>
+              </a-entity>
+        </a-marker>
+        <a-entity camera position="0 0 0"></a-entity>
+    </a-scene>
+</body>
+</html>
+
+3
